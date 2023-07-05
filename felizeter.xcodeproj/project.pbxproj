@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CEEDD2B02A55AE2600219494 /* felizeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDD2AF2A55AE2600219494 /* felizeterApp.swift */; };
-		CEEDD2B22A55AE2600219494 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDD2B12A55AE2600219494 /* ContentView.swift */; };
 		CEEDD2B42A55AE2700219494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDD2B32A55AE2700219494 /* Assets.xcassets */; };
 		CEEDD2B72A55AE2700219494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDD2B62A55AE2700219494 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		CEEDD2AC2A55AE2600219494 /* felizeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = felizeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEDD2AF2A55AE2600219494 /* felizeterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = felizeterApp.swift; sourceTree = "<group>"; };
-		CEEDD2B12A55AE2600219494 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEEDD2B32A55AE2700219494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEDD2B62A55AE2700219494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEEDD2B82A55AE2700219494 /* felizeter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = felizeter.entitlements; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				CEEDD2AF2A55AE2600219494 /* felizeterApp.swift */,
-				CEEDD2B12A55AE2600219494 /* ContentView.swift */,
 				CEEDD2B32A55AE2700219494 /* Assets.xcassets */,
 				CEEDD2B82A55AE2700219494 /* felizeter.entitlements */,
 				CEEDD2B52A55AE2700219494 /* Preview Content */,
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEDD2B22A55AE2600219494 /* ContentView.swift in Sources */,
 				CEEDD2B02A55AE2600219494 /* felizeterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +270,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +298,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
