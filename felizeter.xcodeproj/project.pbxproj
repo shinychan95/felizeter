@@ -18,6 +18,7 @@
 		CEEDD2B32A55AE2700219494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEDD2B62A55AE2700219494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEEDD2B82A55AE2700219494 /* felizeter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = felizeter.entitlements; sourceTree = "<group>"; };
+		CEEDD2BE2A55D7A900219494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +51,7 @@
 		CEEDD2AE2A55AE2600219494 /* felizeter */ = {
 			isa = PBXGroup;
 			children = (
+				CEEDD2BE2A55D7A900219494 /* Info.plist */,
 				CEEDD2AF2A55AE2600219494 /* felizeterApp.swift */,
 				CEEDD2B32A55AE2700219494 /* Assets.xcassets */,
 				CEEDD2B82A55AE2700219494 /* felizeter.entitlements */,
@@ -270,6 +272,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = felizeter/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -298,6 +302,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = felizeter/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
