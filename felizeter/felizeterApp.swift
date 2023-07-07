@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
-import Foundation
 
 @main
 struct felizeterApp: App {
     @AppStorage("showMenuBarExtra") private var showMenuBarExtra = true
-    @NSApplicationDelegateAdaptor private var appDelegate: MyAppDelegate
+    @NSApplicationDelegateAdaptor private var appDelegate: AppDelegate
     
     var body: some Scene {
         MenuBarExtra("FelizeterApp", image: "TRex") {
@@ -22,9 +21,8 @@ struct felizeterApp: App {
 }
 
 struct AppMenu: View {
-    @EnvironmentObject var appDelegate: MyAppDelegate
+    @EnvironmentObject var appDelegate: AppDelegate
     @State private var textOutput = "No Action Taken Yet"
-    @State private var isOn = false
 
     func action1() {
         textOutput = "Action 1 Performed"
@@ -55,17 +53,8 @@ struct AppMenu: View {
             
             Divider()
 
-            Toggle(isOn: $isOn) {
-                Text(isOn ? "Turn OFF" : "Turn ON")
-            }
-            .onChange(of: isOn) { newValue in
-                if newValue {
-                    print("ON, start measuring system metrics...")
-                    // Insert code here to start measuring system metrics
-                } else {
-                    print("OFF, stop measuring system metrics...")
-                    // Insert code here to stop measuring system metrics
-                }
+            Toggle(isOn: $appDelegate.isOn) {
+                Text(appDelegate.isOn ? "Turn OFF" : "Turn ON")
             }
             
             Divider()
@@ -75,29 +64,4 @@ struct AppMenu: View {
     }
 }
 
-class MyAppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
-    var monitor: Any?
-    @Published var keyPressCount = 0
-    
-    func applicationDidFinishLaunching(
-        _ application: NSApplication,
-        didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
-    ) {
-        // Record the device token.
-    }
-    
-    func applicationDidFinishLaunching(_ notification: Notification) {
-        print("Application did finish launching")
-        self.keyPressCount += 1
-        monitor = NSEvent.addGlobalMonitorForEvents(matching: .keyDown) { event in
-            print("Key pressed: \(event.keyCode)")
-            self.keyPressCount += 1
-        }
-    }
-    
-    func applicationWillTerminate(_ notification: Notification) {
-        if let monitor = monitor {
-            NSEvent.removeMonitor(monitor)
-        }
-    }
-}
+

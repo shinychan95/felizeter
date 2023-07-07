@@ -10,6 +10,7 @@
 		CEEDD2B02A55AE2600219494 /* felizeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDD2AF2A55AE2600219494 /* felizeterApp.swift */; };
 		CEEDD2B42A55AE2700219494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDD2B32A55AE2700219494 /* Assets.xcassets */; };
 		CEEDD2B72A55AE2700219494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDD2B62A55AE2700219494 /* Preview Assets.xcassets */; };
+		CEEDD2C62A57D6CB00219494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDD2C52A57D6CB00219494 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CEEDD2B62A55AE2700219494 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEEDD2B82A55AE2700219494 /* felizeter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = felizeter.entitlements; sourceTree = "<group>"; };
 		CEEDD2BE2A55D7A900219494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CEEDD2C52A57D6CB00219494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				CEEDD2BE2A55D7A900219494 /* Info.plist */,
 				CEEDD2AF2A55AE2600219494 /* felizeterApp.swift */,
+				CEEDD2C52A57D6CB00219494 /* AppDelegate.swift */,
 				CEEDD2B32A55AE2700219494 /* Assets.xcassets */,
 				CEEDD2B82A55AE2700219494 /* felizeter.entitlements */,
 				CEEDD2B52A55AE2700219494 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEDD2C62A57D6CB00219494 /* AppDelegate.swift in Sources */,
 				CEEDD2B02A55AE2600219494 /* felizeterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
