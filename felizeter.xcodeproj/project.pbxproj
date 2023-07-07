@@ -11,6 +11,8 @@
 		CEEDD2B42A55AE2700219494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDD2B32A55AE2700219494 /* Assets.xcassets */; };
 		CEEDD2B72A55AE2700219494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDD2B62A55AE2700219494 /* Preview Assets.xcassets */; };
 		CEEDD2C62A57D6CB00219494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDD2C52A57D6CB00219494 /* AppDelegate.swift */; };
+		CEEDD2C82A57DBF300219494 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDD2C72A57DBF300219494 /* DBManager.swift */; };
+		CEEDD2CB2A57DD9A00219494 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = CEEDD2CA2A57DD9A00219494 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,7 @@
 		CEEDD2B82A55AE2700219494 /* felizeter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = felizeter.entitlements; sourceTree = "<group>"; };
 		CEEDD2BE2A55D7A900219494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CEEDD2C52A57D6CB00219494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEEDD2C72A57DBF300219494 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEDD2CB2A57DD9A00219494 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				CEEDD2B32A55AE2700219494 /* Assets.xcassets */,
 				CEEDD2B82A55AE2700219494 /* felizeter.entitlements */,
 				CEEDD2B52A55AE2700219494 /* Preview Content */,
+				CEEDD2C72A57DBF300219494 /* DBManager.swift */,
 			);
 			path = felizeter;
 			sourceTree = "<group>";
@@ -87,6 +92,9 @@
 			dependencies = (
 			);
 			name = felizeter;
+			packageProductDependencies = (
+				CEEDD2CA2A57DD9A00219494 /* SQLite */,
+			);
 			productName = felizeter;
 			productReference = CEEDD2AC2A55AE2600219494 /* felizeter.app */;
 			productType = "com.apple.product-type.application";
@@ -115,6 +123,9 @@
 				Base,
 			);
 			mainGroup = CEEDD2A32A55AE2600219494;
+			packageReferences = (
+				CEEDD2C92A57DD9A00219494 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = CEEDD2AD2A55AE2600219494 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEDD2C62A57D6CB00219494 /* AppDelegate.swift in Sources */,
+				CEEDD2C82A57DBF300219494 /* DBManager.swift in Sources */,
 				CEEDD2B02A55AE2600219494 /* felizeterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEEDD2C92A57DD9A00219494 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEEDD2CA2A57DD9A00219494 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEDD2C92A57DD9A00219494 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEEDD2A42A55AE2600219494 /* Project object */;
 }
